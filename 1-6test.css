@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header{
+	height: 400px;
+	background-image: url(img/mv1.jpg);
+	background-size: cover;
+	background-position: bottom;
+	padding-bottom: 20px;
+}
+.header-headline{
+	padding-top: 20px;
+	padding-left: 20px;
+	color: black;
+}
+.main-contents{
+	width: 840px;
+	margin: 0 auto;
+	padding: 20px 0 50px 0;
+}
+.main-contents-box{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid;
+}
