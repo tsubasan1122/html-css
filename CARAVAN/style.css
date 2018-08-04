@@ -12,7 +12,11 @@ a{
   display: block;
   clear: both;
 }
+header, nav, h2, .main-vidual, footer{
+	font-family: Chalkduster, "Bradly Hand", Courier, "Segoe Print", sans-serif;
+}
 header{
+	position: relative;
 	width: 90%;
 	padding: 15px 0;
 	margin: 0 auto;
@@ -20,6 +24,15 @@ header{
 }
 header .headline{
 	font-size: 32px;
+}
+.social i{
+	display: inline-block;
+	margin-left: 20px;
+}
+.social{
+	position: absolute;
+	top: 22px;
+	right: 22px;
 }
 .nav-list{
 	text-align: center;
@@ -117,7 +130,7 @@ main{
 	width: 230px;
 	float: left;
 }
-.sidebar-headline, .intstagram-headline, .categories-headline{
+.sidebar-headline, .instagram-headline, .categories-headline{
 	border-bottom: 8px solid #f7f7f7;
 	text-align: center;
 	line-height: 0.6;
@@ -173,3 +186,60 @@ footer{
 .footer-text{
 	color: #fff;
 }
+
+
+@media screen and (max-width:425px){
+	header{
+		width: 100%;
+	}
+	.nav-list{
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	.social {
+		display: none;
+	}
+	.nav-list-item{
+	width: 100%;
+	margin: 0 0 10px 0;
+	}
+	.main-vidual-content{
+	width: 100%;
+	}
+	main{
+	width: 100%;
+	}
+	.sidebar{
+	width: 100%;
+	float: none;
+	}
+	.blog{
+	width: 100%;
+	margin: 0;
+	}
+	.blog-box{
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.blog-image{
+		width: 49%;
+	}
+	.blog-text{
+		width: 49%;
+		padding-top: 5px;
+	}
+	.sidebar {
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
+  }
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
+  .pagination { 
+   margin-bottom: 50px;
+  }}
